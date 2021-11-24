@@ -7,7 +7,7 @@ import { useStateContext } from '../context/state';
 import ErrorMessage from './ErrorMessage';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
-import SofLogo from '../svg/stack-overflow.svg';
+import cflogo from '../svg/cflogo.png';
 import { getErrorMsg } from '../utils/helperFuncs';
 
 import {
@@ -83,7 +83,7 @@ const RegisterForm = ({ setAuthType, closeModal }) => {
 
   return (
     <div className={classes.root}>
-      <img src={SofLogo} alt="sof-logo" className={classes.titleLogo} />
+      <img src={cflogo} alt="cf-logo" className={classes.titleLogo} />
       <form onSubmit={handleSubmit(onRegister)}>
         <div className={classes.inputField}>
           <TextField

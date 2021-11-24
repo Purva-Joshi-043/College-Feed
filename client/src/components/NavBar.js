@@ -7,7 +7,7 @@ import UserMenuDesktop from './UserMenuDesktop';
 import SearchBar from './SearchBar';
 import DarkModeSwitch from './DarkModeSwitch';
 import { useAuthContext } from '../context/auth';
-import SofLogo from '../svg/stack-overflow.svg';
+import cflogo from '../svg/cflogo.png';
 
 import {
   AppBar,
@@ -63,7 +63,7 @@ const NavBar = () => {
                     component={RouterLink}
                     to="/"
                   >
-                    <img src={SofLogo} width="25px" alt="sof-logo" />
+                    <img src={cflogo} width="25px" alt="cf-logo" />
                   </IconButton>
                 ) : (
                   <Button
@@ -73,9 +73,9 @@ const NavBar = () => {
                     size="large"
                   >
                     <img
-                      src={SofLogo}
+                      src={cflogo}
                       width="28px"
-                      alt="sof-logo"
+                      alt="cf-logo"
                       style={{ marginRight: '5px' }}
                     />
                     College<strong>Feed</strong>

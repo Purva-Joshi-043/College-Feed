@@ -28,7 +28,7 @@ const RightSidePanel = () => {
         <div className={classes.content}>
           <div className={classes.tagsColumn}>
             <Typography variant="h6" color="secondary">
-              Top Tags
+              Top Topics
             </Typography>
             {!loading && data ? (
               <div className={classes.tagsWrapper}>
